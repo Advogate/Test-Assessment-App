@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	
+	<title>Web Quiz Application</title>
+	
+	<link rel="stylesheet" type="text/css" href="css/pass.css"/>
+	<script type="text/javascript" src="scripts/pass.js"></script>
+</head>
+
+<body>
+    <h1>Government Quiz Question </h1>
+    <p><span>Instructions</span>: Please answer all the <span>[10]</span> objective questions, fill your name and click the submit button below to view your result. </p>
+    <p>Please enter your name:</p>
+        <h2 id="displayId"></h2>
+    <p>
+        <input id="userId" type="text" placeholder="SurName LastName required" required />
+        <input type="button" id="userSubmit" value="Submit" onclick="getUser()" /></p>
+    <form class="form">
+    <ol>
+        <li>
+            <h4>When was Biafra Republic declared as a Sovreign state?</h4>
+            <input type="radio" name="question0" value="A" />may 29, 1967<br />
+            <input type="radio" name="question0" value="B" />may 30, 1967<br />
+            <input type="radio" name="question0" value="C" />may 31, 1967<br />
+            <input type="radio" name="question0" value="D" />may 32, 1969<br />
+        </li>
+        
+        <li>
+            <h4>In a legislative, carpet-crossing means</h4>
+            <input type="radio" name="question1" value="A" />legislative instrument<br />
+            <input type="radio" name="question1" value="B" />legislative dismisal<br />
+            <input type="radio" name="question1" value="C" />crossing to another party<br />
+            <input type="radio" name="question1" value="D" />crossing aladin's carpet<br />
+        </li>
+        <li>
+            <h4>The coming together of two or more political parties to form a government is_</h4>
+            <input type="radio" name="question2" value="A" />political Marriage<br />
+            <input type="radio" name="question2" value="B" />unification<br />
+            <input type="radio" name="question2" value="C" />merger<br />
+            <input type="radio" name="question2" value="D" />coalition<br />
+        </li>
+        <li>
+            <h4>Bicameralism?</h4>
+            <input type="radio" name="question3" value="A" />guards against intra-party clashes<br />
+            <input type="radio" name="question3" value="B" />prevents arbitary law making<br />
+            <input type="radio" name="question3" value="C" />is the only system available<br />
+            <input type="radio" name="question3" value="D" />project party manifestoes<br />
+        </li>
+        <li>
+            <h4>Who is the president of Nigeria?</h4>
+            <input type="radio" name="question4" value="A" />President Muhammodu Buhari<br />
+            <input type="radio" name="question4" value="B" />President Bukola Saraki<br />
+            <input type="radio" name="question4" value="C" />President Olusegun Obasanjo<br />
+            <input type="radio" name="question4" value="D" />President Goodluck Ebele Jonathan<br />
+        </li>
+        <li>
+            <h4>When was the Amalgamation of the Northern and Southern protectorate?</h4>
+            <input type="radio" name="question5" value="A" />1917<br />
+            <input type="radio" name="question5" value="B" />1916<br />
+            <input type="radio" name="question5" value="C" />1915<br />
+            <input type="radio" name="question5" value="D" />1914<br />
+        </li>
+        <li>
+            <h4>What is the full meaning of APC?</h4>
+            <input type="radio" name="question6" value="A" />Action People's Congress<br />
+            <input type="radio" name="question6" value="B" />All Progressive People's Party<br />
+            <input type="radio" name="question6" value="C" />All Progressive Congress<br />
+            <input type="radio" name="question6" value="D" />Alliance People's Party<br />
+        </li>
+        <li>
+            <h4>At what age can you be Enfranchized in Nigeria?</h4>
+            <input type="radio" name="question7" value="A" />18<br />
+            <input type="radio" name="question7" value="B" />17<br />
+            <input type="radio" name="question7" value="C" />16<br />
+            <input type="radio" name="question7" value="D" />20<br />
+        </li>
+        <li>
+            <h4>______ is the most corrupt Nigeria leader? </h4>
+            <input type="radio" name="question8" value="A" />Gen. Olusegun Obasanjo<br />
+            <input type="radio" name="question8" value="B" />James Ibori<br />
+            <input type="radio" name="question8" value="C" />All of the Above<br />
+            <input type="radio" name="question8" value="D" />Gen. Abacha<br />
+        </li>
+        <li>
+            <h4>Who annulled the June 12 1993 general election?</h4>
+            <input type="radio" name="question9" value="A" />Gen. Abacha<br />
+            <input type="radio" name="question9" value="B" />Gen. Ibrahim Babaginda<br />
+            <input type="radio" name="question9" value="C" />Major Gen. Odimegu Ojuwku<br />
+            <input type="radio" name="question9" value="D" />Chief Ernest Sonekan<br />
+        </li>
+    </ol>
+    <button id="submit" type="submit" onclick="returnScore()">Submit</button>
+        <button id="restart" type="reset" value="Restart">Restart</button>
+    </form>
+</body>
+</html>

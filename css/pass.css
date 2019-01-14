@@ -1,0 +1,122 @@
+*{
+            background-color: darkslateblue;
+            font-family: serif;
+        }
+        
+        li{
+            background-color: aliceblue;
+            border-radius: 10px;
+            width: 300px;
+            max-width: 1000px;
+            min-width: 100px;
+            margin: 5px;
+        }
+        
+        h4{
+            background-color:cornflowerblue;
+            border-radius: 5px;
+            width: 300px;
+            max-width: 1000px;
+            min-width: 100px;
+            height: 40px;
+            color:currentColor;
+            position: relative;
+            bottom: 21px;
+        }
+        
+        input#userId{
+            color: black;
+            border-radius: 5px;
+            background-color: aliceblue;
+        }
+input#userId:focus-within{
+    color:darkslategray;
+}
+        input#userSubmit{
+            background-color:crimson;
+            color: aliceblue;
+            border-radius: 5px;
+        }
+        
+        ol{
+            list-style-type:none;
+            display: flex;
+            flex-flow: row wrap;
+            border:3px solid white;
+        }
+        li:hover{
+            background-color: crimson;
+            color: aliceblue;
+            border-width: medium;
+            border:3px solid;
+        }
+        h4:hover{
+            background-color:darkslateblue;
+            border-width:thin;
+            border:1px solid purple;
+        }
+       /* h4:not(hover){
+            color: white;
+        }*/
+        
+        h1{
+            background-color: azure;
+            text-align: center;
+            text-shadow: 1px 2px 3px black;
+        }
+        
+        p{
+            color: azure
+        }
+        
+        span{
+            color: crimson;
+        }
+        
+        button#submit{
+            background-color: forestgreen;
+            width: 30%;
+            border-radius: 10px;
+            color: aliceblue;
+            font-size: 20px;
+        }
+        
+        button#restart{
+            float: right;
+            width: 30%;
+            border-radius: 10px;
+            background-color: crimson;
+            color: aliceblue;
+            font-size: 20px;
+        }
+#displayId{
+    background-color: aliceblue;
+    color: dimgrey;
+    width: 50%;
+    border-radius: 10px;
+}
+
+        
+        b{
+            color: crimson;
+        }
+
+        @media all and (max-width: 1450px){
+			ol{
+				justify-content: space-between;
+			}
+            
+        @media all and (max-width: 710px){
+			ol{
+				justify-content: center;
+            }
+            h4,li{
+                width: 100%;
+            }
+        @media all and (max-width: 400px){
+			ol{
+				justify-content: center;
+            }
+            h4{
+                height: auto;
+            }
